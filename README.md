@@ -97,3 +97,4 @@ Deploy backend and frontend separately. Set `VITE_API_BASE_URL` to your producti
 - Recruiter applicant review uses **manual sorting** (resume score, interview score, CGPA) — no AI auto-hiring.
 - Jobs must be **Approved** by placement officers before students can apply.
 - Students must be **Verified** before applying to jobs.
+"# Place_ProAI" 
