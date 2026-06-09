@@ -1,0 +1,6 @@
+{
+  "name": "PlacePro AI",
+  "description": "A centralized AI-powered platform for students, recruiters, placement officers, and admins to streamline placements, resume reviews, mock interviews, and rankings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
