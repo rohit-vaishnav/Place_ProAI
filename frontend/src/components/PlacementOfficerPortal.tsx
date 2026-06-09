@@ -92,7 +92,7 @@ export default function PlacementOfficerPortal({
             onClick={() => setActiveTab("verifications")}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${
               activeTab === "verifications" 
-              ? "bg-[#E5EEE4] text-[#2D3748] border-l-4 border-[#A5C89E]" 
+              ? "bg-indigo-50/70 text-indigo-950 border-l-4 border-indigo-600" 
               : "text-neutral-600 hover:bg-neutral-50"
             }`}
           >
@@ -102,7 +102,7 @@ export default function PlacementOfficerPortal({
             onClick={() => setActiveTab("jobs-ver")}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${
               activeTab === "jobs-ver" 
-              ? "bg-[#E5EEE4] text-[#2D3748] border-l-4 border-[#A5C89E]" 
+              ? "bg-indigo-50/70 text-indigo-950 border-l-4 border-indigo-600" 
               : "text-neutral-600 hover:bg-neutral-50"
             }`}
           >
@@ -112,7 +112,7 @@ export default function PlacementOfficerPortal({
             onClick={() => setActiveTab("drives")}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${
               activeTab === "drives" 
-              ? "bg-[#E5EEE4] text-[#2D3748] border-l-4 border-[#A5C89E]" 
+              ? "bg-indigo-50/70 text-indigo-950 border-l-4 border-indigo-600" 
               : "text-neutral-600 hover:bg-neutral-50"
             }`}
           >
@@ -122,7 +122,7 @@ export default function PlacementOfficerPortal({
             onClick={() => setActiveTab("analytics")}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${
               activeTab === "analytics" 
-              ? "bg-[#E5EEE4] text-[#2D3748] border-l-4 border-[#A5C89E]" 
+              ? "bg-indigo-50/70 text-indigo-950 border-l-4 border-indigo-600" 
               : "text-neutral-600 hover:bg-neutral-50"
             }`}
           >
@@ -225,7 +225,7 @@ export default function PlacementOfficerPortal({
 
         {/* TAB 2: PENDING JOBS REVIEW */}
         {activeTab === "jobs-ver" && (
-          <div className="bg-white p-6 rounded-2xl border border-[#E5EEE4]/40 shadow-sm flex flex-col gap-6">
+          <div className="bg-white p-6 rounded-2xl border border-neutral-200/50 shadow-sm flex flex-col gap-6">
             <div>
               <h2 className="font-serif text-lg font-bold text-slate-800">Recruiter Job Post Reviews Desk</h2>
               <p className="text-xs text-neutral-500 mt-1">Review vacancies posted by corporate hiring entities. Every recruitment opening must be verified before it is displayed on active student job boards.</p>
@@ -393,7 +393,7 @@ export default function PlacementOfficerPortal({
                     </div>
                   </div>
 
-                  <div className="w-full bg-[#E5EEE4]/60 p-3 rounded-xl border border-[#A5C89E]/20 text-[10px] text-slate-700 flex justify-between items-center mt-1">
+                  <div className="w-full bg-indigo-50/60 p-3 rounded-xl border border-indigo-200/20 text-[10px] text-slate-700 flex justify-between items-center mt-1">
                     <span>Target: {drive.eligibleCourses.join(", ")}</span>
                     <span className="font-bold underline">{drive.registeredCount} active RSVPs</span>
                   </div>
@@ -436,7 +436,7 @@ export default function PlacementOfficerPortal({
                     </div>
                     {/* SVG Progress */}
                     <div className="w-full h-2.5 bg-neutral-200/60 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#A5C89E] rounded-full" style={{ width: "70.8%" }} />
+                      <div className="h-full bg-indigo-600 rounded-full" style={{ width: "70.8%" }} />
                     </div>
                   </div>
 
@@ -487,7 +487,7 @@ export default function PlacementOfficerPortal({
             </div>
 
             {/* Placement rate summary block */}
-            <div className="bg-[#E5EEE4] p-5 rounded-2xl border border-[#A5C89E]/40 flex flex-col md:flex-row items-center justify-between gap-5 mt-4">
+            <div className="bg-emerald-50/80 p-5 rounded-2xl border border-emerald-200/60 flex flex-col md:flex-row items-center justify-between gap-5 mt-4">
               <div className="flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-emerald-800 shrink-0" />
                 <div className="text-slate-800">
@@ -527,7 +527,7 @@ export default function PlacementOfficerPortal({
                 <div className="grid grid-cols-1 gap-2.5 mb-4">
                   {inspectStudent.projects?.map((prj, prjIdx) => (
                     <div key={prjIdx} className="bg-neutral-50/50 p-3 rounded-xl border border-neutral-200 text-xs">
-                      <span className="font-bold block text-slate-800">{prj.name} <span className="font-mono text-[9px] bg-[#E5EEE4] border py-0.5 px-1 rounded ml-1.5">{prj.tech}</span></span>
+                      <span className="font-bold block text-slate-800">{prj.name} <span className="font-mono text-[9px] bg-slate-100 border border-neutral-200 py-0.5 px-1 rounded ml-1.5">{prj.tech}</span></span>
                       <p className="text-[11px] text-neutral-500 mt-1">{prj.desc}</p>
                     </div>
                   ))}
@@ -545,7 +545,7 @@ export default function PlacementOfficerPortal({
                     onVerifyStudent(inspectStudent.id, "Verified");
                     setInspectStudent(null);
                   }}
-                  className="flex-1 py-3 bg-[#A5C89E] hover:bg-[#9CAB84] text-white rounded-xl text-xs font-bold shadow-sm transition"
+                  className="flex-1 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold shadow-sm transition"
                 >
                   Verify Profile Approved
                 </button>

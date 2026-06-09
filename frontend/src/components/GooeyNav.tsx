@@ -165,10 +165,10 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
         {`
           :root {
             --linear-ease: linear(0, 0.068, 0.19 2.7%, 0.804 8.1%, 1.037, 1.199 13.2%, 1.245, 1.27 15.8%, 1.274, 1.272 17.4%, 1.249 19.1%, 0.996 28%, 0.949, 0.928 33.3%, 0.926, 0.933 36.8%, 1.001 45.6%, 1.013, 1.019 50.8%, 1.018 54.4%, 1 63.1%, 0.995 68%, 1.001 85%, 1);
-            --color-1: #A5C89E;
-            --color-2: #9CAB84;
-            --color-3: #FFFDCE;
-            --color-4: #2D3748;
+            --color-1: #4F46E5;
+            --color-2: #1E3A8A;
+            --color-3: #10B981;
+            --color-4: #8B5CF6;
           }
           .effect {
             position: absolute;
@@ -201,7 +201,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             content: "";
             position: absolute;
             inset: 0;
-            background: #A5C89E;
+            background: var(--color-1);
             transform: scale(0);
             opacity: 0;
             z-index: -1;
@@ -296,7 +296,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             position: absolute;
             inset: 0;
             border-radius: 9999px;
-            background: #A5C89E;
+            background: var(--color-1);
             opacity: 0;
             transform: scale(0);
             transition: all 0.3s ease;

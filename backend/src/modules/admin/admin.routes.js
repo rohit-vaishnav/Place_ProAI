@@ -6,6 +6,8 @@ const router = Router();
 
 router.get("/stats", authenticate, adminOnly, adminController.getStats);
 router.get("/users", authenticate, adminOnly, adminController.listUsers);
+router.post("/users", authenticate, adminOnly, adminController.createUser);
+router.delete("/users/:id", authenticate, adminOnly, adminController.deleteUser);
 router.post("/students/:id/grant-verification", authenticate, adminOnly, adminController.grantVerification);
 router.post("/reset", authenticate, adminOnly, adminController.resetData);
 

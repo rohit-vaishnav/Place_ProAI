@@ -501,7 +501,7 @@ export default function StudentPortal({
                 {profile.verificationStatus === "Unsubmitted" && (
                   <button
                     onClick={triggerVerificationRequest}
-                    className="px-4 py-2 bg-[#E5EEE4] border border-[#A5C89E] hover:bg-emerald-50 text-slate-800 rounded-xl text-xs font-semibold transition"
+                    className="px-4 py-2 bg-indigo-50 border border-indigo-200 hover:bg-indigo-100 text-indigo-900 rounded-xl text-xs font-semibold transition"
                   >
                     Request College Verification
                   </button>
@@ -669,7 +669,7 @@ export default function StudentPortal({
                 />
                 <button
                   type="submit"
-                  className="self-end px-3 py-1.5 bg-[#A5C89E] hover:bg-[#9CAB84] text-white rounded-lg text-xs font-semibold transition"
+                  className="self-end px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold transition"
                 >
                   Append Project
                 </button>
@@ -681,7 +681,7 @@ export default function StudentPortal({
                     <div>
                       <h4 className="text-xs font-bold text-slate-800 flex items-center gap-2">
                         {p.name}
-                        {p.tech && <span className="font-mono text-[10px] bg-[#E5EEE4] text-slate-700 border border-neutral-200 py-0.5 px-1.5 rounded">{p.tech}</span>}
+                        {p.tech && <span className="font-mono text-[10px] bg-indigo-50/50 text-indigo-900 border border-indigo-100/50 py-0.5 px-1.5 rounded">{p.tech}</span>}
                       </h4>
                       <p className="text-xs text-neutral-500 mt-1">{p.desc}</p>
                     </div>
@@ -777,7 +777,7 @@ export default function StudentPortal({
                     <span className="text-[10px] text-neutral-500 mt-2">Evaluation of content phrasing</span>
                   </div>
 
-                  <div className="bg-amber-50 border border-[#A5C89E] rounded-xl p-6 flex flex-col items-center justify-center text-center">
+                  <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex flex-col items-center justify-center text-center">
                     <span className="text-xs text-amber-900 font-bold uppercase tracking-wider mb-2">Readiness verdict</span>
                     <div className="text-xl font-bold text-amber-800">{analysisResult.readinessRating}</div>
                     <span className="text-[10px] text-amber-700 mt-2">Matching standard parameters</span>
@@ -785,7 +785,7 @@ export default function StudentPortal({
                 </div>
 
                 {/* Industry summary description */}
-                <div className="p-4 bg-[#E5EEE4] border border-[#A5C89E] rounded-xl">
+                <div className="p-4 bg-indigo-50/40 border border-indigo-100/60 rounded-xl">
                   <h4 className="text-xs font-bold text-slate-800 mb-1">AI Industry Placement Brief</h4>
                   <p className="text-xs text-slate-700 line-clamp-3 leading-relaxed">{analysisResult.industryReadinessSummary}</p>
                 </div>
@@ -1031,7 +1031,7 @@ export default function StudentPortal({
                   <div className="flex items-center gap-6 self-start md:self-auto">
                     <div className="flex flex-col items-center">
                       <span className="text-xs text-neutral-400 mb-1">Grade</span>
-                      <div className="text-5xl font-serif font-extrabold text-[#A5C89E]">{interviewReport.grade}</div>
+                      <div className="text-5xl font-serif font-extrabold text-emerald-400">{interviewReport.grade}</div>
                     </div>
                     <div className="w-px h-12 bg-neutral-800" />
                     <div className="flex flex-col items-center">
@@ -1180,7 +1180,7 @@ export default function StudentPortal({
               <button
                 type="submit"
                 disabled={!chatInput.trim() || isChatSending}
-                className="p-3 bg-[#A5C89E] hover:bg-[#9CAB84] text-white rounded-xl transition disabled:opacity-50"
+                 className="p-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl transition disabled:opacity-50"
               >
                 <Send className="w-4 h-4" />
               </button>
@@ -1209,7 +1209,7 @@ export default function StudentPortal({
                     <div key={job.id} className="bg-white rounded-2xl p-6 border border-neutral-200/50 hover:border-neutral-300 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-5 transition-all">
                       <div>
                         <div className="flex items-center gap-2 mb-2">
-                          <span className="font-mono text-[10px] font-extrabold uppercase tracking-widest bg-[#E5EEE4] text-slate-800 px-2 py-0.5 rounded border border-[#A5C89E]">
+                          <span className="font-mono text-[10px] font-extrabold uppercase tracking-widest bg-indigo-950 text-indigo-200 px-2 py-0.5 rounded-md border border-indigo-800/60 shadow-sm">
                             {job.recruiterName}
                           </span>
                           <span className="text-[10px] text-neutral-400">Deadline: {job.deadline}</span>
@@ -1249,7 +1249,7 @@ export default function StudentPortal({
                             hasApplied 
                             ? "bg-slate-100 text-slate-400 font-normal cursor-default border border-neutral-200" 
                             : isVerified_user 
-                            ? "bg-[#A5C89E] hover:bg-[#9CAB84] text-white shadow-md hover:shadow-lg"
+                            ? "bg-indigo-600 hover:bg-indigo-700 text-white shadow-md hover:shadow-lg"
                             : "bg-neutral-200 text-neutral-400 cursor-not-allowed"
                           }`}
                         >

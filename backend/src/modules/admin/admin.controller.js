@@ -25,3 +25,15 @@ export const resetData = asyncHandler(async (_req, res) => {
   await adminService.resetPlatformData();
   return success(res, null, "Platform data reset — run seed script to repopulate");
 });
+
+export const createUser = asyncHandler(async (req, res) => {
+  const user = await adminService.createUserByAdmin(req.body);
+  return success(res, user, "User created successfully by Administrator", 201);
+});
+
+export const deleteUser = asyncHandler(async (req, res) => {
+  await adminService.deleteUserByAdmin(req.params.id);
+  return success(res, null, "User deleted successfully");
+});
+
+

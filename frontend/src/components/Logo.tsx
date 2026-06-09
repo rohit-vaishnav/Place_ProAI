@@ -23,11 +23,11 @@ export default function Logo({ className = "", iconClassName = "", showText = tr
 
       {showText && (
         <div className="flex flex-col text-left">
-          <h1 className="font-serif text-md md:text-lg font-bold tracking-tight text-slate-800 leading-none flex items-center gap-1.5">
+          <h1 className="font-serif text-md md:text-lg font-bold tracking-tight text-white leading-none flex items-center gap-1.5">
             <span>PlacePro</span>
-            <span className="text-emerald-800 font-sans font-semibold text-[10px] uppercase tracking-wider bg-emerald-100/80 border border-emerald-200 py-0.5 px-2 rounded-full">AI</span>
+            <span className="text-emerald-300 font-sans font-semibold text-[10px] uppercase tracking-wider bg-emerald-500/20 border border-emerald-500/30 py-0.5 px-2 rounded-full">AI</span>
           </h1>
-          <span className="text-[9px] font-mono font-semibold tracking-wide text-neutral-400 uppercase mt-1">
+          <span className="text-[9px] font-mono font-semibold tracking-wide text-slate-300 uppercase mt-1">
             Campus Placement Portal
           </span>
         </div>

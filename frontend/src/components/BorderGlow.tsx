@@ -75,14 +75,14 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
   children,
   className = '',
   edgeSensitivity = 20,
-  glowColor = '105 45 75', // default sage green
+  glowColor = '79 70 229', // default indigo
   backgroundColor = '#FFFFFF', // Clean bright card body
   borderRadius = 16,
   glowRadius = 35,
   glowIntensity = 0.6,
   coneSpread = 30,
   animated = false,
-  colors = ['#A5C89E', '#E5EEE4', '#FFFDCE'], // Soft Academic palette
+  colors = ['#1E3A8A', '#4F46E5', '#10B981'], // Deep Blue, Indigo, Emerald
   fillOpacity = 0.15,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);

@@ -7,7 +7,7 @@ const THEME_KEY = "placepro_theme";
 export function useTheme() {
   const [theme, setThemeState] = useState<ThemeMode>(() => {
     const saved = localStorage.getItem(THEME_KEY);
-    return saved === "light" ? "light" : "dark";
+    return saved === "dark" ? "dark" : "light";
   });
 
   useEffect(() => {
